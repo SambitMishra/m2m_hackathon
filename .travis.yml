@@ -1,8 +1,9 @@
-language: ruby
-rvm:
-  - 2.0.0
+language: node_js
+node_js:
+    - "0.10"
+script: node_modules/karma/bin/karma start my.conf.js --single-run
+before_install:
+    - export DISPLAY=:99.0
+    - sh -e /etc/init.d/xvfb start
 before_script:
-  - npm install karma
-script:
-  - RAILS_ENV=test bundle exec rake --trace db:migrate test
-  - karma start --single-run --browsers PhantomJS test/karma/config/unit.js
+    - npm install
