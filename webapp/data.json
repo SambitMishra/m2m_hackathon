@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "companyName": "Verizon",
+            "value": "12345"
+        },
+        {
+            "companyName": "AT&T",
+            "value": "14325"
+        }
+    ],
+    "success": true
+}
