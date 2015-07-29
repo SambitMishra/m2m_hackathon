@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma": "^0.13.3",
+    "karma-jasmine": "^0.3.6"
+  },
+  "devDependencies": {
+    "karma": "^0.13.3",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-html-reporter": "^0.2.6",
+    "karma-jasmine": "^0.3.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
