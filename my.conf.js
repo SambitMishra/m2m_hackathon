@@ -15,11 +15,11 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-		"C:/Users/Administrator/Desktop/m2m_hackathon/m2m_hackathon/jasmine/lib/jasmine-2.3.4/jasmine.js",
-		"C:/Users/Administrator/Desktop/m2m_hackathon/m2m_hackathon/jasmine/lib/jasmine-html/jasmine.js",
-		"C:/Users/Administrator/Desktop/m2m_hackathon/m2m_hackathon/jasmine/lib/boot/jasmine.js",
+		"jasmine/lib/jasmine-2.3.4/jasmine.js",
+		"jasmine/lib/jasmine-html/jasmine.js",
+		"jasmine/lib/boot/jasmine.js",
 		
-		"C:/Users/Administrator/Desktop/m2m_hackathon/m2m_hackathon/spec/AppSpec.js"
+		"spec/AppSpec.js"
 		
     ],
 
