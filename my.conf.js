@@ -15,11 +15,11 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-		"jasmine/lib/jasmine-2.3.4/jasmine.js",
-		"jasmine/lib/jasmine-html/jasmine.js",
-		"jasmine/lib/boot/jasmine.js",
+		// "jasmine/lib/jasmine-2.3.4/jasmine.js",
+		// "jasmine/lib/jasmine-html/jasmine.js",
+		// "jasmine/lib/boot/jasmine.js",
 		
-		"spec/AppSpec.js"
+		// "spec/AppSpec.js"
 		
     ],
 
@@ -61,6 +61,7 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ['Firefox'],
+    // browsers: ['Chrome'],
 
 
     // Continuous Integration mode
