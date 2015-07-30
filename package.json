@@ -13,6 +13,7 @@
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.3",
     "karma-chrome-launcher": "^0.2.0",
+    "karma-cli": "^0.1.0",
     "karma-firefox-launcher": "^0.1.6",
     "karma-html-reporter": "^0.2.6",
     "karma-ie-launcher": "^0.2.0",
