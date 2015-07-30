@@ -8,7 +8,9 @@ before_install:
 before_script:
 - npm install
 - chmod +x ./node_modules/karma/bin/karma
+sudo: required
 deploy:
+  edge: true
   provider: cloudfoundry
   api: https://api.run.pivotal.io
   username: prashanth.mukkera@one.verizon.com
