@@ -1,9 +1,21 @@
 language: node_js
 node_js:
-    - "0.12.7"
+- 0.12.7
 script: node_modules/karma/bin/karma start my.conf.js --single-run
 before_install:
-    - export DISPLAY=:99.0
-    - sh -e /etc/init.d/xvfb start
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
 before_script:
-    - npm install
+- npm install
+deploy:
+edge: true
+  provider:
+    provider: cloudfoundry
+  api: https://api.run.pivotal.io
+  username: prashanth.mukkera@one.verizon.com
+  password:
+    secure: fAliXSpZWEa7JyyKQ84dTojvfpISmYKwKZnno3z2MIP0z1P5/CuN5fLUiT5XaGKHsit5mKLHrkLUU5IddXrw76gM2CHFl3d1O01AdzKWY/I/mpFdC/objrqwbbzIOmPAjFSUr6p1mo0hxrh/IBXE6WQ59vDB8huQMirx6LPHWcMDcGxAevm0hC7h/WVmXDJJPheRGqplbbGt2qeI5KyWyBs1lvpkid8YO5kUF2c54GKwfj+bqmaAZw0VV5b6LLh5q9DazXCJA00ct1Kkin41qQFn6mH8vnLv6Sb4GilPVeX1103CUBZeXYcHr2tMnUOfA6bPFWL/qvf7dBrFCk3g4VFQyvI+PMX+RobaqFaJMTqpYmLiOrOnYjmoQVDig0W/3btnlYbHhytuxBpP+mWbBplJw3DOmxaO1Fu8q3PN9BFre/vawQVtw8k2YOIDLHad9Xm6G/xNY/7Gke8zF6gZ0ojH8QeA4Jyhd++xNhcpWTIm8+5ZqXJj31tYMJdhCSj7rMY+pHcomWmmjCGjnlUjGpuTuqS5n/EitpFuBMokJR6O3zlmDXCIvOIXL6XDmelpUb5unzcbaHEAcGVKE1XMKKPeXqIEaiWHp1k4n4efqNWrEoBHxKNksFAunbmAXS8MajKxkSIADeR4zvCDgCp+XjvnUSTu9i7wL7Zs6LE4sig=
+  organization: VES_M2M
+  space: development
+  on:
+    repo: SambitMishra/m2m_hackathon
