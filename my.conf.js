@@ -5,12 +5,21 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    // basePath: '',
+    basePath: '../..',
 
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine'],
+	
+	plugins: [
+		'karma-jasmine',
+		// 'karma-chrome-launcher',
+		// 'karma-firefox-launcher',
+		'karma-ie-launcher',
+		'reporter'
+	],
 
 
     // list of files / patterns to load in the browser
@@ -19,7 +28,7 @@ module.exports = function(config) {
 		// "jasmine/lib/jasmine-html/jasmine.js",
 		// "jasmine/lib/boot/jasmine.js",
 		
-		// "spec/AppSpec.js"
+		// "jasmine/spec/AppSpec.js"
 		
     ],
 
@@ -60,8 +69,9 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Firefox'],
-    // browsers: ['Chrome'],
+    // browsers: ['Firefox'],
+	// browsers: ['Chrome'],
+	browsers: ['IE'],
 
 
     // Continuous Integration mode
