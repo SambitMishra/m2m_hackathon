@@ -17,6 +17,7 @@ module.exports = function(config) {
     files: [
       'jasmine/spec/*.js'
     ],
+	
 
 
     // list of files to exclude
@@ -55,7 +56,8 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['IE'],
+    // browsers: ['IE'],
+    browsers: ['Firefox'],
 
 
     // Continuous Integration mode
