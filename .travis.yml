@@ -6,7 +6,6 @@ before_install:
 before_script:
 - npm install
 - chmod +x ./node_modules/karma/bin/karma
-- cf login -a api.run.pivotal.io -u prashanth.mukkera@one.verizon.com -p Shanth#9 
 sudo: required
 deploy:
   edge: true
