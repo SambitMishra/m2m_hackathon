@@ -1,5 +1,5 @@
 applications:
 - name: hackathon-static
 memory: 512M
-buildpack: java-buildpack-master.zip
+buildpack: java_buildpack
 FORCE_HTTPS: true
