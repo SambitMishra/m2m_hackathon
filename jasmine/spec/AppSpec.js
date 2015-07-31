@@ -2,7 +2,7 @@
 describe("Testing App", function() {
 	it("The UI should Come up", function() {
 		var company = $('#company');
-		company.not.toBe(null);
+		expect(a).not.toBe(null);
 	});
 	
 	it("Dummy test cases", function() {
