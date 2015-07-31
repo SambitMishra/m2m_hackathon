@@ -1,0 +1,421 @@
+
+############################## For Multiple Companies
+URL :http://localhost:8080/m2mHackathon2/secure/getCompaniesStockInfo
+
+INPUT JSON:
+
+{
+    "companyList": [
+        "GOOG",
+        "YHOO"
+    ]
+}
+
+
+OUTPUT JSON:
+
+{
+    "status": null,
+    "errorCode": null,
+    "dataArray": [
+        {
+            "YHOO": {
+                "name": "Yahoo! Inc.",
+                "symbol": "YHOO",
+                "currency": "USD",
+                "stats": {
+                    "symbol": "YHOO",
+                    "sharesOutstanding": 937568000,
+                    "sharesOwned": 0,
+                    "epsEstimateCurrentYear": 0.67,
+                    "sharesFloat": 864110000,
+                    "epsEstimateNextQuarter": 0.2,
+                    "epsEstimateNextYear": 0.68,
+                    "bookValuePerShare": 35.76,
+                    "oneYearTargetPrice": 51.67,
+                    "priceBook": 1.05,
+                    "eps": 7.2,
+                    "ebitda": 541750000,
+                    "roe": 1.55,
+                    "marketCap": 35000000000,
+                    "pe": 5.19,
+                    "peg": -2.28,
+                    "priceSales": 7.2,
+                    "revenue": 4870000000
+                },
+                "stockExchange": "NMS",
+                "history": [
+                    {
+                        "date": 1435723200000,
+                        "symbol": "YHOO",
+                        "volume": 12262400,
+                        "open": 39.459999,
+                        "close": 37.419998,
+                        "low": 36.580002,
+                        "adjClose": 37.419998,
+                        "high": 39.98
+                    },
+                    {
+                        "date": 1433131200000,
+                        "symbol": "YHOO",
+                        "volume": 11792100,
+                        "open": 43.049999,
+                        "close": 39.290001,
+                        "low": 38.849998,
+                        "adjClose": 39.290001,
+                        "high": 43.779999
+                    },
+                    {
+                        "date": 1430452800000,
+                        "symbol": "YHOO",
+                        "volume": 18019700,
+                        "open": 42.549999,
+                        "close": 42.939999,
+                        "low": 39.119999,
+                        "adjClose": 42.939999,
+                        "high": 45.07
+                    },
+                    {
+                        "date": 1427860800000,
+                        "symbol": "YHOO",
+                        "volume": 14137800,
+                        "open": 44.450001,
+                        "close": 42.57,
+                        "low": 42.259998,
+                        "adjClose": 42.57,
+                        "high": 46.169998
+                    },
+                    {
+                        "date": 1425272400000,
+                        "symbol": "YHOO",
+                        "volume": 13743900,
+                        "open": 44.060001,
+                        "close": 44.439999,
+                        "low": 41.970001,
+                        "adjClose": 44.439999,
+                        "high": 45.669998
+                    },
+                    {
+                        "date": 1422853200000,
+                        "symbol": "YHOO",
+                        "volume": 14479100,
+                        "open": 44.43,
+                        "close": 44.279999,
+                        "low": 42.540001,
+                        "adjClose": 44.279999,
+                        "high": 45.25
+                    },
+                    {
+                        "date": 1420174800000,
+                        "symbol": "YHOO",
+                        "volume": 25554600,
+                        "open": 50.66,
+                        "close": 43.990002,
+                        "low": 41.799999,
+                        "adjClose": 43.990002,
+                        "high": 50.779999
+                    },
+                    {
+                        "date": 1417410000000,
+                        "symbol": "YHOO",
+                        "volume": 16328900,
+                        "open": 51.43,
+                        "close": 50.509998,
+                        "low": 48.290001,
+                        "adjClose": 50.509998,
+                        "high": 51.68
+                    },
+                    {
+                        "date": 1414990800000,
+                        "symbol": "YHOO",
+                        "volume": 25212400,
+                        "open": 46.049999,
+                        "close": 51.740002,
+                        "low": 45.740002,
+                        "adjClose": 51.740002,
+                        "high": 52.619999
+                    },
+                    {
+                        "date": 1412136000000,
+                        "symbol": "YHOO",
+                        "volume": 32907000,
+                        "open": 40.66,
+                        "close": 46.049999,
+                        "low": 36.200001,
+                        "adjClose": 46.049999,
+                        "high": 46.52
+                    },
+                    {
+                        "date": 1409630400000,
+                        "symbol": "YHOO",
+                        "volume": 59562900,
+                        "open": 38.900002,
+                        "close": 40.75,
+                        "low": 37.900002,
+                        "adjClose": 40.75,
+                        "high": 44.009998
+                    },
+                    {
+                        "date": 1406865600000,
+                        "symbol": "YHOO",
+                        "volume": 14516900,
+                        "open": 35.689999,
+                        "close": 38.509998,
+                        "low": 35.150002,
+                        "adjClose": 38.509998,
+                        "high": 38.720001
+                    },
+                    {
+                        "date": 1406779200000,
+                        "symbol": "YHOO",
+                        "volume": 35874800,
+                        "open": 36.259998,
+                        "close": 35.810001,
+                        "low": 35.68,
+                        "adjClose": 35.810001,
+                        "high": 36.490002
+                    }
+                ],
+                "quote": {
+                    "timeZone": "America/New_York",
+                    "symbol": "YHOO",
+                    "lastTradeDateStr": null,
+                    "previousClose": 37.42,
+                    "lastTradeTime": 1438350780000,
+                    "changeFromYearLow": 0.05,
+                    "priceAvg200": 43,
+                    "lastTradeTimeStr": null,
+                    "changeFromAvg50": -2,
+                    "changeInPercent": -0.24,
+                    "changeFromAvg50InPercent": -5.09,
+                    "changeFromYearHigh": -0.24,
+                    "changeFromAvg200": -5.67,
+                    "changeFromAvg200InPercent": -13.19,
+                    "changeFromYearLowInPercent": 0.13,
+                    "lastTradeSize": 100,
+                    "price": 37.33,
+                    "changeFromYearHighInPercent": -0.64,
+                    "dayHigh": 37.57,
+                    "volume": 738879,
+                    "change": -0.09,
+                    "ask": 37.33,
+                    "bidSize": 2100,
+                    "dayLow": 37.28,
+                    "yearLow": 37.28,
+                    "avgVolume": 13631100,
+                    "askSize": 800,
+                    "yearHigh": 37.57,
+                    "priceAvg50": 39.33,
+                    "bid": 37.32,
+                    "open": 37.55
+                },
+                "dividend": {
+                    "symbol": "YHOO",
+                    "annualYieldPercent": 0,
+                    "annualYield": 0,
+                    "payDate": null,
+                    "exDate": null
+                }
+            },
+            "GOOG": {
+                "name": "Google Inc.",
+                "symbol": "GOOG",
+                "currency": "USD",
+                "stats": {
+                    "symbol": "GOOG",
+                    "sharesOutstanding": 685535000,
+                    "sharesOwned": 0,
+                    "epsEstimateCurrentYear": 28.95,
+                    "sharesFloat": 584082000,
+                    "epsEstimateNextQuarter": 8.14,
+                    "epsEstimateNextYear": 33.75,
+                    "bookValuePerShare": 163.07,
+                    "oneYearTargetPrice": 645,
+                    "priceBook": 3.88,
+                    "eps": 21.22,
+                    "ebitda": 22620000000,
+                    "roe": 5.26,
+                    "marketCap": 430100000000,
+                    "pe": 29.56,
+                    "peg": 1.2,
+                    "priceSales": 6.23,
+                    "revenue": 69610000000
+                },
+                "stockExchange": "NMS",
+                "history": [
+                    {
+                        "date": 1435723200000,
+                        "symbol": "GOOG",
+                        "volume": 2942200,
+                        "open": 524.72998,
+                        "close": 632.590027,
+                        "low": 515.179993,
+                        "adjClose": 632.590027,
+                        "high": 678.640015
+                    },
+                    {
+                        "date": 1433131200000,
+                        "symbol": "GOOG",
+                        "volume": 1650100,
+                        "open": 536.789978,
+                        "close": 520.51001,
+                        "low": 520.5,
+                        "adjClose": 520.51001,
+                        "high": 543.73999
+                    },
+                    {
+                        "date": 1430452800000,
+                        "symbol": "GOOG",
+                        "volume": 1719600,
+                        "open": 538.429993,
+                        "close": 532.109985,
+                        "low": 521.085022,
+                        "adjClose": 532.109985,
+                        "high": 544.190002
+                    },
+                    {
+                        "date": 1427860800000,
+                        "symbol": "GOOG",
+                        "volume": 2116700,
+                        "open": 548.602417,
+                        "close": 537.340027,
+                        "low": 521.01239,
+                        "adjClose": 537.340027,
+                        "high": 571.142578
+                    },
+                    {
+                        "date": 1425272400000,
+                        "symbol": "GOOG",
+                        "volume": 1828900,
+                        "open": 560.532532,
+                        "close": 548.002441,
+                        "low": 544.222473,
+                        "adjClose": 548.002441,
+                        "high": 577.912598
+                    },
+                    {
+                        "date": 1422853200000,
+                        "symbol": "GOOG",
+                        "volume": 1841600,
+                        "open": 531.732361,
+                        "close": 558.402588,
+                        "low": 518.552307,
+                        "adjClose": 558.402588,
+                        "high": 564.712585
+                    },
+                    {
+                        "date": 1420174800000,
+                        "symbol": "GOOG",
+                        "volume": 2791200,
+                        "open": 529.01239,
+                        "close": 534.522461,
+                        "low": 487.562195,
+                        "adjClose": 534.522461,
+                        "high": 542.172424
+                    },
+                    {
+                        "date": 1417410000000,
+                        "symbol": "GOOG",
+                        "volume": 2146700,
+                        "open": 538.902466,
+                        "close": 526.402405,
+                        "low": 489.002228,
+                        "adjClose": 526.402405,
+                        "high": 541.412415
+                    },
+                    {
+                        "date": 1414990800000,
+                        "symbol": "GOOG",
+                        "volume": 1561200,
+                        "open": 555.502502,
+                        "close": 541.832458,
+                        "low": 530.082397,
+                        "adjClose": 541.832458,
+                        "high": 557.902527
+                    },
+                    {
+                        "date": 1412136000000,
+                        "symbol": "GOOG",
+                        "volume": 2356400,
+                        "open": 576.012634,
+                        "close": 559.08252,
+                        "low": 508.102295,
+                        "adjClose": 559.08252,
+                        "high": 581.002625
+                    },
+                    {
+                        "date": 1409630400000,
+                        "symbol": "GOOG",
+                        "volume": 1673200,
+                        "open": 571.852539,
+                        "close": 577.36261,
+                        "low": 568.212646,
+                        "adjClose": 577.36261,
+                        "high": 596.482666
+                    },
+                    {
+                        "date": 1406865600000,
+                        "symbol": "GOOG",
+                        "volume": 1368800,
+                        "open": 570.402588,
+                        "close": 571.602539,
+                        "low": 560.002563,
+                        "adjClose": 571.602539,
+                        "high": 587.342651
+                    },
+                    {
+                        "date": 1406779200000,
+                        "symbol": "GOOG",
+                        "volume": 4205600,
+                        "open": 580.6026,
+                        "close": 571.602539,
+                        "low": 570.002563,
+                        "adjClose": 571.602539,
+                        "high": 583.652649
+                    }
+                ],
+                "quote": {
+                    "timeZone": "America/New_York",
+                    "symbol": "GOOG",
+                    "lastTradeDateStr": null,
+                    "previousClose": 632.59,
+                    "lastTradeTime": 1438350780000,
+                    "changeFromYearLow": 0.94,
+                    "priceAvg200": 545.13,
+                    "lastTradeTimeStr": null,
+                    "changeFromAvg50": 61.48,
+                    "changeInPercent": -0.82,
+                    "changeFromAvg50InPercent": 10.86,
+                    "changeFromYearHigh": -4.91,
+                    "changeFromAvg200": 82.26,
+                    "changeFromAvg200InPercent": 15.09,
+                    "changeFromYearLowInPercent": 0.15,
+                    "lastTradeSize": 150,
+                    "price": 627.39,
+                    "changeFromYearHighInPercent": -0.78,
+                    "dayHigh": 632.3,
+                    "volume": 172521,
+                    "change": -5.2,
+                    "ask": 627.44,
+                    "bidSize": 100,
+                    "dayLow": 626.45,
+                    "yearLow": 626.45,
+                    "avgVolume": 2029210,
+                    "askSize": 100,
+                    "yearHigh": 632.3,
+                    "priceAvg50": 565.91,
+                    "bid": 626.8,
+                    "open": 631.38
+                },
+                "dividend": {
+                    "symbol": "GOOG",
+                    "annualYieldPercent": 0,
+                    "annualYield": 0,
+                    "payDate": null,
+                    "exDate": null
+                }
+            }
+        }
+    ],
+    "companyList": null
+}
