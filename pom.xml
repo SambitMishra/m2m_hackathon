@@ -47,8 +47,6 @@ ttp://maven.apache.org/xsd/maven-4.0.0.xsd">
 <!--   			<groupId>com.oracle</groupId> -->
 <!--   			<artifactId>ojdbc14</artifactId> -->
 <!--   			<version>10.1.0.4.0</version> -->
-<!--   			<version>10.1.0.4.0</version> -->
-<!--   			<version>10.1.0.4.0</version> -->
 <!--   		</dependency> -->
   		
   		<dependency>
@@ -184,7 +182,7 @@ ttp://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<packaging>war</packaging>
   <build>
   	<finalName>m2mHackathon2</finalName>
-  	<directory>/webapps</directory>
+  	<directory>D:/apache-tomcat-7.0.55-windows-x64/apache-tomcat-7.0.55/webapps</directory>
     <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
     <!-- <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>  -->
     <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
