@@ -165,19 +165,39 @@ ttp://maven.apache.org/xsd/maven-4.0.0.xsd">
   			<artifactId>spring-orm</artifactId>
   			<version>${spring.version}</version>
   		</dependency>
-  		<!-- 
-  		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-mapper-asl</artifactId>
-			<version>1.9.10</version>
+  		
+  		<dependency>  
+		    <groupId>org.codehaus.jackson</groupId>
+		    <artifactId>jackson-mapper-asl</artifactId>
+		    <version>1.8.5</version>
 		</dependency>
+
+		<dependency>  
+		    <groupId>org.codehaus.jackson</groupId>
+		    <artifactId>jackson-core-asl</artifactId>
+		    <version>1.8.5</version>
+		</dependency>
+		<!--  -->
 		
 		<dependency>
 		    <groupId>com.yahoofinance-api</groupId>
 		    <artifactId>YahooFinanceAPI</artifactId>
 		    <version>2.0.0</version>
 		</dependency>
-		 -->
+		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.12</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.12</version>
+		</dependency>
+		
+		
+		
   	</dependencies>
 	<packaging>war</packaging>
   <build>
@@ -223,6 +243,10 @@ ttp://maven.apache.org/xsd/maven-4.0.0.xsd">
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>2.0.2</version>
+          <configuration>
+          	<source>1.6</source>
+          	<target>1.6</target>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-dependency-plugin</artifactId>
@@ -320,15 +344,17 @@ ttp://maven.apache.org/xsd/maven-4.0.0.xsd">
       <name>Maven Repository Switchboard</name>
       <url>http://repo1.maven.org/maven2</url>
     </repository>
+    
   </repositories>
   <pluginRepositories>
     <pluginRepository>
+      <!-- x
       <releases>
         <updatePolicy>never</updatePolicy>
       </releases>
       <snapshots>
         <enabled>false</enabled>
-      </snapshots>
+      </snapshots> -->
       <id>central</id>
       <name>Maven Plugin Repository</name>
       <url>http://repo1.maven.org/maven2</url>
