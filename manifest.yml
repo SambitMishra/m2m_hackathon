@@ -1,5 +1,5 @@
 applications:
 - name: hackathon-static
 memory: 512M
-buildpack: java_buildpack
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
 FORCE_HTTPS: true

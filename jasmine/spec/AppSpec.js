@@ -1,8 +1,8 @@
 
 describe("Testing App", function() {
 	it("The UI should Come up", function() {
-		expect(1).toEqual(1);
-		// console.log("Testing");
+		var company = $('#company');
+		company.not.toBe(null);
 	});
 	
 	it("Dummy test cases", function() {

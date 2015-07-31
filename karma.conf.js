@@ -16,6 +16,9 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
 		'src/main/webapp/index.html',
+		'src/main/webapp/js/jquery-2.1.4.min.js',
+		'src/main/webapp/js/main.js',
+		'src/main/webapp/js/canvasjs.min.js',
 	  
 		'jasmine/spec/*.js'
     ],
