@@ -337,7 +337,7 @@ ttp://maven.apache.org/xsd/maven-4.0.0.xsd">
     </pluginRepository>
   </pluginRepositories>
   <reporting>
-    <outputDirectory>\m2m_hackathonGit\target\site</outputDirectory>
+    <outputDirectory>D:\workspace\M2M_Hackathon_Git\m2m_hackathonGit\target\site</outputDirectory>
   </reporting>
   
   
