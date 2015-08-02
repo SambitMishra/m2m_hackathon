@@ -32,7 +32,7 @@ $(document).ready(function(){
 				"companyList": companyList
 			};
 		}
-		
+		$("#loading").show();
 		/* Act on the event */
 		$.ajax({
 			dataType: "json",
@@ -60,6 +60,9 @@ $(document).ready(function(){
 				}
 				
 				drawChart(output);
+			},
+			failure: function(response){
+				$("#loading").hide();
 			}
 		});
 	});
@@ -129,6 +132,7 @@ function drawChart(data) {
 	chart.options.data.push(seriesPrice);
 	
 	chart.render();
+	$("#loading").hide();
 }
 
 

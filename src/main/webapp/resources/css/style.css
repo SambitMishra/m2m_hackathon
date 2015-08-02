@@ -55,6 +55,11 @@ th {
   background-color: rgba(0,0,0,0.5);
   text-align: center;
 }
+#loading div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 #loading p{
   margin-top: 50%;
 }
