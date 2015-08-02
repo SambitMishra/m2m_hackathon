@@ -203,7 +203,7 @@ ttp://maven.apache.org/xsd/maven-4.0.0.xsd">
   <build>
   	<finalName>m2mHackathon2</finalName>
   	<!--<directory>D:/apache-tomcat-7.0.55-windows-x64/apache-tomcat-7.0.55/webapps</directory> -->
-	<directory>webapps</directory>
+	<directory></directory>
     <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
     <!-- <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>  -->
     <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
