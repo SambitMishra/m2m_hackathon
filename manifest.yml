@@ -1,5 +1,5 @@
 applications:
 - name: hackathon-static
 memory: 512M
-buildpack: https://github.com/SambitMishra/m2m_hackathon/tree/master/java-buildpack-master/
+buildpack: /java-buildpack-master
 FORCE_HTTPS: true
