@@ -66,19 +66,30 @@ $(document).ready(function(){
 });
 
 function drawChart(data) {
-	var chart = new CanvasJS.Chart("chartContainer");
+	var chart = new CanvasJS.Chart("chartContainer", {
+		
+		axisX: {
+			title: 'Company'
+		},
+		axisY: {
+			title: 'Stock Price',
+			prefix: '$ '
+		}
+	});
 	chart.options.title = { text: "NYSE" };
 	chart.options.data = [];
 	// chart.axisY.prefix = '$';
 	
 	var datapoints = [];
 	var seriesHigh = {
-		type: "column"
+		type: "column",
+		toolTipContent: '{label}: $ {y}'
 	};
 	for(var i=0,len = data.length;i<len;i++){
 		var item = {
 			label : data[i].companyName,
-			y : data[i].dayHigh
+			y : data[i].dayHigh,
+			label: 'Highest'
 		}
 		datapoints.push(item);	
 	}
@@ -87,12 +98,14 @@ function drawChart(data) {
 	
 	var datapoints = [];
 	var seriesLow = {
-		type: "column"
+		type: "column",
+		toolTipContent: '{label}: $ {y}'
 	};
 	for(var i=0,len = data.length;i<len;i++){
 		var item = {
 			label : data[i].companyName,
-			y : data[i].dayLow
+			y : data[i].dayLow,
+			label: 'Lowest'
 		}
 		datapoints.push(item);	
 	}
@@ -101,12 +114,14 @@ function drawChart(data) {
 	
 	var datapoints = [];
 	var seriesPrice = {
-		type: "line"
+		type: "line",
+		toolTipContent: '{label}: $ {y}'
 	};
 	for(var i=0,len = data.length;i<len;i++){
 		var item = {
 			label : data[i].companyName,
-			y : data[i].price
+			y : data[i].price,
+			label: 'Closing Price'
 		}
 		datapoints.push(item);	
 	}
