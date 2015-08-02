@@ -7,7 +7,6 @@ before_script:
 - npm install
 - chmod +x ./node_modules/karma/bin/karma
 sudo: required
-install: true
 deploy:
   edge: true
   provider: cloudfoundry
