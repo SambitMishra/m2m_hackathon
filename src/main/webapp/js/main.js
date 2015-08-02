@@ -22,7 +22,7 @@ $(document).ready(function(){
 	$("#comparebtn").click(function(event) {
 		var inputJson = {
 			"companyList": [
-				"GOOG"
+				"VZ"
 				
 			]
 		};
@@ -36,56 +36,100 @@ $(document).ready(function(){
 			// url: "resources/fixtures/getCompaniesStockInfo.json",
 			data: JSON.stringify(inputJson),
 			success: function(response){
-				console.log(response);
+				console.log(JSON.stringify(response));
 			}
 		});
 		var response = {
 		    "data": [
 		        {
-		            "companyName": "Verizon",
-		            "value": "12345"
+		            "code": "VZ",
+					"companyName": "Verizon",
+		            "price": 46.79,
+					"dayHigh": 47.17,
+					"dayLow": 46.71,
+					"change": 0.12,
 		        },
 		        {
-		            "companyName": "AT&T",
-		            "value": "14325"
+		            "code": "t",
+					"companyName": "AT & T",
+		            "price": 34.74,
+					"dayHigh": 34.99,
+					"dayLow": 34.72,
+					"change": -0.06,
 		        },
 		        {
-		            "companyName": "Sprint",
-		            "value": "2345"
+		            "code": "TMUS",
+					"companyName": "T-Mobile",
+		            "price": 40.66,
+					"dayHigh": 41.21,
+					"dayLow": 39.55,
+					"change": -0.06,
 		        },
 		        {
-		            "companyName": "T-Mobile",
-		            "value": "1234"
+		            "code": "USM",
+					"companyName": "US Cellular",
+		            "price": 37.22,
+					"dayHigh": 38.5,
+					"dayLow": 36.55,
+					"change": -0.06,
 		        }
 		    ],
 		    "success": true
 		};
 		var chart = new CanvasJS.Chart("chartContainer");
-		var datapoints = [];
 		var data = response.data;
-		chart.options.title = { text: "Results" };
+		chart.options.title = { text: "NYSE" };
 		chart.options.data = [];
-		var series1 = { //dataSeries - first quarter
+		// chart.axisY.prefix = '$';
+		
+		var datapoints = [];
+		var seriesHigh = {
 	        type: "column"
 	    };
-	    chart.options.data.push(series1);
 		for(var i=0,len = data.length;i<len;i++){
 			var item = {
 				label : data[i].companyName,
-				y : parseInt(data[i].value)
+				y : data[i].dayHigh
 			}
 			datapoints.push(item);	
 		}
-		series1.dataPoints = datapoints;
+		seriesHigh.dataPoints = datapoints;
+		chart.options.data.push(seriesHigh);
+		
+		var datapoints = [];
+		var seriesLow = {
+	        type: "column"
+	    };
+		for(var i=0,len = data.length;i<len;i++){
+			var item = {
+				label : data[i].companyName,
+				y : data[i].dayLow
+			}
+			datapoints.push(item);	
+		}
+		seriesLow.dataPoints = datapoints;
+		chart.options.data.push(seriesLow);
+		
+		var datapoints = [];
+		var seriesPrice = {
+	        type: "line"
+	    };
+		for(var i=0,len = data.length;i<len;i++){
+			var item = {
+				label : data[i].companyName,
+				y : data[i].price
+			}
+			datapoints.push(item);	
+		}
+		seriesPrice.dataPoints = datapoints;
+		chart.options.data.push(seriesPrice);
+		
 		chart.render();
+		drawChart(response);
 	});
 });
-$(function(){
 
-
-});
-/*$(document).ajaxStart(function(){
-    $('#loading').show();
- }).ajaxStop(function(){
-    $('#loading').hide();
- });*/
+function drawChart(data) {
+	
+	alert('Chart is drawn');
+}
