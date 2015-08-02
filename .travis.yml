@@ -17,5 +17,5 @@ deploy:
   organization: VES_M2M
   space: development
   on:
-    repo: m2m_hackathon
+    repo: SambitMishra/m2m_hackathon
 
