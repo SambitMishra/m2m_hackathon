@@ -51,7 +51,7 @@ $(document).ready(function(){
 					var key = companyList[i];
 					output.push({
 						"code": data[key].symbol,
-						"companyName": data[key].name,
+						"companyName": data[key].name.split(' ')[0],
 						"price": data[key].quote.price,
 						"dayHigh": data[key].quote.dayHigh,
 						"dayLow": data[key].quote.dayLow,
@@ -83,13 +83,13 @@ function drawChart(data) {
 	var datapoints = [];
 	var seriesHigh = {
 		type: "column",
-		toolTipContent: '{label}: $ {y}'
+		toolTipContent: '{type}: $ {y}'
 	};
 	for(var i=0,len = data.length;i<len;i++){
 		var item = {
 			label : data[i].companyName,
-			y : data[i].dayHigh,
-			label: 'Highest'
+			type: 'Highest',
+			y : data[i].dayHigh
 		}
 		datapoints.push(item);	
 	}
@@ -99,13 +99,13 @@ function drawChart(data) {
 	var datapoints = [];
 	var seriesLow = {
 		type: "column",
-		toolTipContent: '{label}: $ {y}'
+		toolTipContent: '{type}: $ {y}'
 	};
 	for(var i=0,len = data.length;i<len;i++){
 		var item = {
 			label : data[i].companyName,
-			y : data[i].dayLow,
-			label: 'Lowest'
+			type: 'Lowest',
+			y : data[i].dayLow
 		}
 		datapoints.push(item);	
 	}
@@ -115,13 +115,13 @@ function drawChart(data) {
 	var datapoints = [];
 	var seriesPrice = {
 		type: "line",
-		toolTipContent: '{label}: $ {y}'
+		toolTipContent: '{type}: $ {y}'
 	};
 	for(var i=0,len = data.length;i<len;i++){
 		var item = {
 			label : data[i].companyName,
-			y : data[i].price,
-			label: 'Closing Price'
+			type: 'Closing Price',
+			y : data[i].price
 		}
 		datapoints.push(item);	
 	}
