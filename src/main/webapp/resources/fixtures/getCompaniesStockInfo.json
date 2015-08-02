@@ -1,0 +1,205 @@
+{
+    "status": null,
+    "errorCode": null,
+    "dataArray": [
+        {
+            "name": "Google Inc.",
+            "symbol": "GOOG",
+            "currency": "USD",
+            "stats": {
+                "symbol": "GOOG",
+                "sharesOutstanding": 685535000,
+                "sharesOwned": 0,
+                "epsEstimateCurrentYear": 28.95,
+                "sharesFloat": 584082000,
+                "epsEstimateNextQuarter": 8.14,
+                "epsEstimateNextYear": 33.75,
+                "bookValuePerShare": 163.07,
+                "oneYearTargetPrice": 645,
+                "priceBook": 3.88,
+                "eps": 21.22,
+                "ebitda": 22620000000,
+                "roe": 5.25,
+                "marketCap": 430720000000,
+                "pe": 29.6,
+                "peg": 1.2,
+                "priceSales": 6.23,
+                "revenue": 69610000000
+            },
+            "stockExchange": "NMS",
+            "history": [
+                {
+                    "date": 1435723200000,
+                    "symbol": "GOOG",
+                    "volume": 2942200,
+                    "open": 524.72998,
+                    "close": 632.590027,
+                    "low": 515.179993,
+                    "adjClose": 632.590027,
+                    "high": 678.640015
+                },
+                {
+                    "date": 1433131200000,
+                    "symbol": "GOOG",
+                    "volume": 1650100,
+                    "open": 536.789978,
+                    "close": 520.51001,
+                    "low": 520.5,
+                    "adjClose": 520.51001,
+                    "high": 543.73999
+                },
+                {
+                    "date": 1430452800000,
+                    "symbol": "GOOG",
+                    "volume": 1720000,
+                    "open": 538.429993,
+                    "close": 532.109985,
+                    "low": 521.085022,
+                    "adjClose": 532.109985,
+                    "high": 544.190002
+                },
+                {
+                    "date": 1427860800000,
+                    "symbol": "GOOG",
+                    "volume": 2116700,
+                    "open": 548.602417,
+                    "close": 537.340027,
+                    "low": 521.01239,
+                    "adjClose": 537.340027,
+                    "high": 571.142578
+                },
+                {
+                    "date": 1425272400000,
+                    "symbol": "GOOG",
+                    "volume": 1828900,
+                    "open": 560.532532,
+                    "close": 548.002441,
+                    "low": 544.222473,
+                    "adjClose": 548.002441,
+                    "high": 577.912598
+                },
+                {
+                    "date": 1422853200000,
+                    "symbol": "GOOG",
+                    "volume": 1841600,
+                    "open": 531.732361,
+                    "close": 558.402588,
+                    "low": 518.552307,
+                    "adjClose": 558.402588,
+                    "high": 564.712585
+                },
+                {
+                    "date": 1420174800000,
+                    "symbol": "GOOG",
+                    "volume": 2791200,
+                    "open": 529.01239,
+                    "close": 534.522461,
+                    "low": 487.562195,
+                    "adjClose": 534.522461,
+                    "high": 542.172424
+                },
+                {
+                    "date": 1417410000000,
+                    "symbol": "GOOG",
+                    "volume": 2146700,
+                    "open": 538.902466,
+                    "close": 526.402405,
+                    "low": 489.002228,
+                    "adjClose": 526.402405,
+                    "high": 541.412415
+                },
+                {
+                    "date": 1414990800000,
+                    "symbol": "GOOG",
+                    "volume": 1561200,
+                    "open": 555.502502,
+                    "close": 541.832458,
+                    "low": 530.082397,
+                    "adjClose": 541.832458,
+                    "high": 557.902527
+                },
+                {
+                    "date": 1412136000000,
+                    "symbol": "GOOG",
+                    "volume": 2356400,
+                    "open": 576.012634,
+                    "close": 559.08252,
+                    "low": 508.102295,
+                    "adjClose": 559.08252,
+                    "high": 581.002625
+                },
+                {
+                    "date": 1409630400000,
+                    "symbol": "GOOG",
+                    "volume": 1673200,
+                    "open": 571.852539,
+                    "close": 577.36261,
+                    "low": 568.212646,
+                    "adjClose": 577.36261,
+                    "high": 596.482666
+                },
+                {
+                    "date": 1406865600000,
+                    "symbol": "GOOG",
+                    "volume": 1368800,
+                    "open": 570.402588,
+                    "close": 571.602539,
+                    "low": 560.002563,
+                    "adjClose": 571.602539,
+                    "high": 587.342651
+                },
+                {
+                    "date": 1406779200000,
+                    "symbol": "GOOG",
+                    "volume": 4205600,
+                    "open": 580.6026,
+                    "close": 571.602539,
+                    "low": 570.002563,
+                    "adjClose": 571.602539,
+                    "high": 583.652649
+                }
+            ],
+            "quote": {
+                "timeZone": "America/New_York",
+                "symbol": "GOOG",
+                "lastTradeDateStr": null,
+                "previousClose": 632.59,
+                "lastTradeTime": 1438351200000,
+                "changeFromYearLow": 1.85,
+                "priceAvg200": 545.13,
+                "lastTradeTimeStr": null,
+                "changeFromAvg50": 62.39,
+                "changeInPercent": -0.68,
+                "changeFromAvg50InPercent": 11.02,
+                "changeFromYearHigh": -4,
+                "changeFromAvg200": 83.17,
+                "changeFromAvg200InPercent": 15.26,
+                "changeFromYearLowInPercent": 0.3,
+                "lastTradeSize": 100,
+                "price": 628.3,
+                "changeFromYearHighInPercent": -0.63,
+                "dayHigh": 632.3,
+                "volume": 215001,
+                "change": -4.29,
+                "ask": 627.92,
+                "bidSize": 100,
+                "dayLow": 626.45,
+                "yearLow": 626.45,
+                "avgVolume": 2029210,
+                "askSize": 100,
+                "yearHigh": 632.3,
+                "priceAvg50": 565.91,
+                "bid": 627.51,
+                "open": 631.38
+            },
+            "dividend": {
+                "symbol": "GOOG",
+                "annualYieldPercent": 0,
+                "annualYield": 0,
+                "payDate": null,
+                "exDate": null
+            }
+        }
+    ],
+    "companyList": null
+}

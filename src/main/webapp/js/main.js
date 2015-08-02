@@ -20,15 +20,25 @@ $(document).ready(function(){
 		$("#alertbox").hide();
 	});
 	$("#comparebtn").click(function(event) {
+		var inputJson = {
+			"companyList": [
+				"GOOG"
+				
+			]
+		};
+		
 		/* Act on the event */
-		/*$.ajax({
+		$.ajax({
 			dataType: "json",
-			url: "data.json",
-			// data: data,
+			contentType: "application/json; charset=utf-8",
+			url: "secure/getCompaniesStockInfo",
+			method: 'POST',
+			// url: "resources/fixtures/getCompaniesStockInfo.json",
+			data: JSON.stringify(inputJson),
 			success: function(response){
-					console.log(response);
+				console.log(response);
 			}
-		});*/
+		});
 		var response = {
 		    "data": [
 		        {
