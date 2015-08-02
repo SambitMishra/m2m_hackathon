@@ -3,3 +3,4 @@ applications:
 memory: 512M
 buildpack: java_buildpack
 FORCE_HTTPS: true
+command: bundle exec rake package
