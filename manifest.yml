@@ -1,6 +1,7 @@
 applications:
 - name: hackathon-static
 memory: 512M
+path: target/m2mHackathonGit-1.0-SNAPSHOT.war
 BP_DEBUG: true
 FORCE_HTTPS: true
 
