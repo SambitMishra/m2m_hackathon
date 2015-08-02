@@ -4,16 +4,19 @@
 <head>
   <meta charset="utf-8">
 
-  <title>M2M</title>
+  <title>Hackathon M2M</title>
   <!-- <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 -->
 <link rel="stylesheet" href="resources/css/bootstrap.css">
 <link rel="stylesheet" href="resources/css/style.css">
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/canvasjs.min.js"></script>
-
+<!-- Include the plugin's CSS and JS: -->
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="resources/css/bootstrap-multiselect.css" type="text/css"/>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -26,30 +29,32 @@
     </div>
   </div>
   <div class="row heading">
-  	<h3>M2M Heading</h3>
+    <img src="resources/images/verizon_logo.png">
+    <h3>Stock Comaprison</h3>
   </div>
   <div class="container-fluid">
     <div class="form-group">
-      <input type="text" name="" value="" placeholder="" id="company" class="form-control">
-      <button id="addcompany" class="btn btn-default">Add</button>
+      <div id="disclaimer" style="display:none">*Please select atleast two options to compare</div>
+      <div class="dropdown" id="domains">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">DOMAINS
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li data-value="TELECOM"><a href="#">TELECOM</a></li>
+            <li data-value="health" class="disabled"><a href="#">HEALTH</a></li>
+            <li data-value="automobile" class="disabled"><a href="#">AUTOMOBILE</a></li>
+            <li data-value="realestate" class="disabled"><a href="#">REAL ESTATE</a></li>
+          </ul>
+        </div>
+        <select id="company" multiple="multiple" style="display:none">
+          <option value="vz">Verizon Wireless</option>
+          <option value="health">AT&T Mobility</option>
+          <option value="automobile">T-Mobile US</option>
+          <option value="realestate">Sprint Corporation</option>
+          <option value="realestate">U.S. Cellular</option>
+        </select>
+        <button id="comparebtn" class="btn btn-primary" style="display:none">Compare</button>
+      </div>
     </div>
-    <div class="alert alert-danger fade in" style="display:none;" id="alertbox">
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <strong>Alert!</strong> Maximum of four options can be added to compare.
-    </div>
-  </div>
-  <div class="container-fluid" id="comparediv">
-    <table id="companylist" class="table table-bordered">
-      <thead>
-        <tr>
-          <th>Company Name</th>
-        </tr>
-      </thead>
-    </table>
-    <button id="comparebtn" class="btn btn-primary">Compare</button>
-  </div>
-  <div id="chartContainer" style="height: 300px; width: 100%;">
-  </div>
-
-</body>
-</html>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+  </body>
+  </html>

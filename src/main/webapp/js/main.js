@@ -133,3 +133,27 @@ function drawChart(data) {
 	
 	alert('Chart is drawn');
 }
+
+
+$(function(){
+	$(".dropdown-menu li a").click(function(){
+		var selText = $(this).text();
+		$(this).parents('#domains').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+		$("#disclaimer").show();
+		$("#company").multiselect({
+			onChange: function(option, checked, select) {
+                // alert('Changed option ' + $(option).val() + '.');
+                var selectedOptions = $('#company option:selected'),
+                	selectedOptionCount = selectedOptions.length,
+                	comparebtn = $("#comparebtn");
+
+                if(selectedOptionCount >=2 ){
+                	comparebtn.show();
+                }
+                else{
+                	comparebtn.hide();
+                }
+            }
+		});
+	});
+});
